@@ -11,6 +11,7 @@ header {
 .hero-text{
     color: yellow;
    font-size: 12pt;
+   font-weight: 400;
 
 }
 .form-control{
@@ -29,6 +30,7 @@ header {
     color: white;
     font-size: 12pt;
     font-weight: 500;
+    font-family: 'Roboto Mono', monospace;
 }
 .floating-card{
     background-color: black;
@@ -47,6 +49,7 @@ header {
 .training {
     background-color: black;
     color: white;
+    font-family: 'Roboto Mono', monospace;
 }
 @media only screen and(max-width:768px) {
     .spill {
