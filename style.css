@@ -1,0 +1,62 @@
+header {
+    background-color: black;
+    color: yellow;
+    font-family: 'Roboto Mono', monospace;
+}
+.hero-image {
+    background-image: url(https://coffeeordie.com/wp-content/uploads/2019/11/RangerCOVER.jpg);
+    min-height: 80vh;
+    background-size: cover;
+}
+.hero-text{
+    color: yellow;
+   font-size: 12pt;
+
+}
+.form-control{
+    background-color: black;
+    opacity: 90%;
+}
+.mb-3{
+    opacity: 100%;
+}
+.card{
+    background-color: black;
+    opacity: 100%;
+}
+.info-card{
+    background-color: black;
+    color: white;
+    font-size: 12pt;
+    font-weight: 500;
+}
+.floating-card{
+    background-color: black;
+    color: white;
+    font-size: 14pt;
+    font-style: italic;
+}
+.info-row{
+    background-color: black;
+    color: white;
+}
+.arms-room{
+    width: 450px;
+    height: 500px;
+}
+.training {
+    background-color: black;
+    color: white;
+}
+@media only screen and(max-width:768px) {
+    .spill {
+        position: relative;
+    }
+} 
+.spill {
+    position:absolute;
+    transform: translateY(40px);
+}
+.form-check-label {
+    color: white;
+}
