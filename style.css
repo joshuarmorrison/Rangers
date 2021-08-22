@@ -1,6 +1,6 @@
 header {
-    background-color: black;
-    color: yellow;
+    background-color: rgb(1, 1, 1);
+    color: gold;
     font-family: 'Roboto Mono', monospace;
 }
 .hero-image {
@@ -9,7 +9,7 @@ header {
     background-size: cover;
 }
 .hero-text{
-    color: yellow;
+    color: gold;
    font-size: 12pt;
    font-weight: 400;
 
@@ -65,4 +65,13 @@ header {
 }
 .card-header {
     color: black;
+}
+.quote {
+    color: gold;
+}
+.cards {
+      display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    flex-direction: row;
 }
