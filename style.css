@@ -51,9 +51,12 @@ header {
     color: white;
     font-family: 'Roboto Mono', monospace;
 }
-@media only screen and(max-width:768px) {
+@media only screen and (max-width:768px) {
     .spill {
         position: relative;
+    }
+    #first-place {
+        order: -1;
     }
 } 
 .spill {
@@ -72,6 +75,9 @@ header {
 .cards {
       display: flex;
         justify-content: space-around;
-        flex-wrap: wrap;
-    flex-direction: row;
+}
+@media only screen and (max-width:768px){
+    #my-title{
+        display: none;
+}
 }

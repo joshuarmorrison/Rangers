@@ -11,17 +11,37 @@
     <link rel="stylesheet" href="style.css">
 
 </head>
+<style>
+    /* This is for wire framing to see our rows/columns */
+    body.debug .container,
+    body.debug .container-fluid {
+        outline: 2px double blue;
+        outline-offset: -2px;
+    }
 
-<body>
-    <header class="Title">
-        <h1 class="mb-0 p-0"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="24" fill="currentColor"
-                class="bi bi-lightning-charge-fill me-2" viewBox="0 0 16 24">
-                <path
-                    d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z" />
-            </svg>U.S. Army Rangers</h1>
-    </header>
+    body.debug .row {
+        outline: 2px dashed red;
+        outline-offset: -2px;
+    }
+
+    body.debug [class*="col-"] {
+        outline: 2px dotted forestgreen;
+        outline-offset: -3px;
+    }
+</style>
+
+<body class="debug">
+    <div class="sticky-top">
+        <header class="Title container-fluid">
+            <h1 class="mb-0 p-0"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="24" fill="currentColor"
+                    class="bi bi-lightning-charge-fill me-2" viewBox="0 0 16 24">
+                    <path
+                        d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z" />
+                </svg>U.S. Army Rangers</h1>
+        </header>
+    </div>
     <main>
-        <div class="container-fluid p-0">
+        <div class="container-fluid">
             <div class="row hero-image">
                 <div class="col-md-4">
                     <div class="card">
@@ -48,147 +68,152 @@
                     </div>
                 </div>
                 <div class="col-md-8">
-                    <h1 class="hero-text mt-4">Army Rangers work 95% of the time at night. While you sleep, they are
-                        taking
-                        the fight to the enemy. </h1>
-                </div>
-            </div>
-            <div class="container-fluid">
-                <div class="row info-row">
-                    <div class="col-md-4 p-0">
-                        <div class="info-card">
-                            Army Rangers are America's elite direct action raid force. Rangers are a rapid deployment
-                            capable small unit. Able to deployed anywhere in the world in less than 18 hours mission
-                            ready
-                            upon arrival. Ranger regiments operate on a rotation system with each other.
-                        </div>
-                    </div>
-                    <div class="col-md-8 d-flex justify-content-center">
-                        <div class="floating-card spill">
-                            <h6><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-dash-circle" viewBox="0 0 16 16">
-                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                                    <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z" />
-                                </svg> Rangers operate generally in 8 man teams.</h6>
-                            <h6><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-dash-circle" viewBox="0 0 16 16">
-                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                                    <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z" />
-                                </svg> Rangers occasionally do company sized operations.</h6>
-                            <h6><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-dash-circle" viewBox="0 0 16 16">
-                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                                    <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z" />
-                                </svg> Snipers in regiment operate in 3 man teams and are deployed as 3 man teams.</h6>
-                            <h6><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-dash-circle" viewBox="0 0 16 16">
-                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                                    <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z" />
-                                </svg> Snipers go through over 36 weeks of extensive and rigorous training.</h6>
-                            <h6><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-dash-circle" viewBox="0 0 16 16">
-                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                                    <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z" />
-                                </svg> Rangers train local and national Law Enforcement Agencies.</h6>
-
-                        </div>
-
+                    <div id="my-title">
+                        <h1 class="hero-text mt-4">Army Rangers work 95% of the time at night. While you
+                            sleep,
+                            they are
+                            taking
+                            the fight to the enemy. </h1>
                     </div>
                 </div>
             </div>
-            <div class="container-fluid p-0">
-                <div class="row bg-dark">
-                    <div class="col-md-3 p-0">
-                        <img class="img-fluid" src="https://ranger.org/wp-content/uploads/2020/11/ranger-and-mt.jpg"
-                            alt="Arms-Room">
+        </div>
+        <div class="container-fluid">
+            <div class="row info-row">
+                <div class="col-md-4 p-0">
+                    <div class="info-card">
+                        Army Rangers are America's elite direct action raid force. Rangers are a rapid deployment
+                        capable small unit. Able to deployed anywhere in the world in less than 18 hours mission
+                        ready
+                        upon arrival. Ranger regiments operate on a rotation system with each other.
                     </div>
-                    <div class="col-md-9 d-flex align-items-center justify-content-center  p-0">
-                        <div class="card training text-center w-100">
-                            <h2><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-check2-circle" viewBox="0 0 16 16">
-                                    <path
-                                        d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
-                                    <path
-                                        d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
-                                </svg> Ranger Training</h2>
-                            <p> - Rangers go through months of rigorous training. The training a ranger goes through
-                                varies for every candidate.
-                                However every ranger must go through the Ranger Assessment & Selection Program as well
-                                as
-                                Ranger School.</p>
-                            <p> - Ranger Assessment & Selection is 8 weeks long and tests every Ranger Candidate
-                                mentally,
-                                physically, and emotionally. RASP for short, is grueling with less than 20% of the
-                                candidates being selected for life in Ranger Regiment.
+                </div>
+                <div class="col-md-8 d-flex justify-content-center">
+                    <div class="floating-card spill">
+                        <h6><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-dash-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z" />
+                            </svg> Rangers operate generally in 8 man teams.</h6>
+                        <h6><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-dash-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z" />
+                            </svg> Rangers occasionally do company sized operations.</h6>
+                        <h6><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-dash-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z" />
+                            </svg> Snipers in regiment operate in 3 man teams and are deployed as 3 man teams.</h6>
+                        <h6><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-dash-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z" />
+                            </svg> Snipers go through over 36 weeks of extensive and rigorous training.</h6>
+                        <h6><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-dash-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z" />
+                            </svg> Rangers train local and national Law Enforcement Agencies.</h6>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row bg-dark">
+                <div class="col-md-3">
+                    <img class="img-fluid" src="https://ranger.org/wp-content/uploads/2020/11/ranger-and-mt.jpg"
+                        alt="Arms-Room">
+                </div>
+                <div class="col-md-9 d-flex align-items-center justify-content-center">
+                    <div class="card training text-center w-100">
+                        <h2><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-check2-circle" viewBox="0 0 16 16">
+                                <path
+                                    d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
+                                <path
+                                    d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
+                            </svg> Ranger Training</h2>
+                        <p> - Rangers go through months of rigorous training. The training a ranger goes through
+                            varies for every candidate.
+                            However every ranger must go through the Ranger Assessment & Selection Program as well
+                            as
+                            Ranger School.</p>
+                        <p> - Ranger Assessment & Selection is 8 weeks long and tests every Ranger Candidate
+                            mentally,
+                            physically, and emotionally. RASP for short, is grueling with less than 20% of the
+                            candidates being selected for life in Ranger Regiment.
+                        </p>
+                        <p>Ranger School is a 62 day course designed to test the mental, physical, and emotional
+                            state of each participant. Throughout the grueling 62 days ranger classes lose over 85%
+                            of their starting numbers.
+                            <button type="button" class="btn btn-secondary">More</button>
+                        </p>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row bg-dark d-flex align-items-center">
+                <div class="col-md-4 cards">
+                    <div class="card border-success mt-3 mb-3" style="max-width: 18rem;">
+                        <div class="card-header"></div>
+                        <div class="card-body text-success">
+                            <h5 class="card-title text-center">Battalion</h5>
+                            <p class="card-text">Ranger Battalion is a very rewarding and coveted unit to belong to.
+                                Regiment is a family.
+                                The brothers you serve with will always be by your side, they will always be there
+                                for
+                                you when you need them.
                             </p>
-                            <p>Ranger School is a 62 day course designed to test the mental, physical, and emotional
-                                state of each participant. Throughout the grueling 62 days ranger classes lose over 85%
-                                of their starting numbers.
-                                <button type="button" class="btn btn-secondary">More</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="first-place" class="col-md-4 cards">
+                    <div class="card border-success mt-3 mb-3" style="max-width: 18rem;">
+                        <div class="card-header"></div>
+                        <div class="card-body text-success">
+                            <h5 class="card-title text-center">Mindset</h5>
+                            <p class="card-text">A ranger is a person who knows what their mind, body, and emotions
+                                are capable of. The
+                                intestinal fortitude to arrive on the objective, no matter what that objective is,
+                                ready
+                                to
+                                fight. Willing to lay down their own life so others can live. Being physically fit
+                                is
+                                only a
+                                fraction of what embodies a ranger within regiment.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 cards">
+                    <div class="card border-success mt-3 mb-3" style="max-width: 18rem;">
+                        <div class="card-header"></div>
+                        <div class="card-body text-success">
+                            <h5 class="card-title text-center">Regiment Life</h5>
+                            <p class="card-text">Life in regiment is ran by a set of rules that allow you to remain
+                                within regiment.
+                                Waive from the rules and you will be sent to the Conventional Army. Adhering to the
+                                insanely high rules in regiment is expected of every person their regardless of
+                                rank.
                             </p>
-
-
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="container-fluid">
-                <div class="row bg-dark">
-                    <div class="col-md-4 cards">
-                        <div class="card border-success mt-3 mb-3" style="max-width: 18rem;">
-                            <div class="card-header"></div>
-                            <div class="card-body text-success">
-                                <h5 class="card-title text-center">Battalion</h5>
-                                <p class="card-text">Ranger Battalion is a very rewarding and coveted unit to belong to.
-                                    Regiment is a family.
-                                    The brothers you serve with will always be by your side, they will always be there
-                                    for
-                                    you when you need them.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 cards">
-                        <div class="card border-success mt-3 mb-3" style="max-width: 18rem;">
-                            <div class="card-header"></div>
-                            <div class="card-body text-success">
-                                <h5 class="card-title text-center">Mindset</h5>
-                                <p class="card-text">A ranger is a person who knows what their mind, body, and emotions
-                                    are capable of. The
-                                    intestinal fortitude to arrive on the objective, no matter what that objective is,
-                                    ready
-                                    to
-                                    fight. Willing to lay down their own life so others can live. Being physically fit
-                                    is
-                                    only a
-                                    fraction of what embodies a ranger within regiment.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 cards">
-                        <div class="card border-success mt-3 mb-3" style="max-width: 18rem;">
-                            <div class="card-header"></div>
-                            <div class="card-body text-success">
-                                <h5 class="card-title text-center">Regiment Life</h5>
-                                <p class="card-text">Life in regiment is ran by a set of rules that allow you to remain
-                                    within regiment.
-                                    Waive from the rules and you will be sent to the Conventional Army. Adhering to the
-                                    insanely high rules in regiment is expected of every person their regardless of
-                                    rank.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row bg-dark quote">
+                <div class="col-12 text-center">
+                    <h3>Ranger Motto</h3>
+                    <p> “It is not death that a man should fear, but he should fear never beginning to live.”</p>
                 </div>
             </div>
-            <div class="container-fluid">
-                <div class="row bg-dark quote">
-                    <div class="col-12 text-center">
-                        <h3>Ranger Motto</h3>
-                        <p> “It is not death that a man should fear, but he should fear never beginning to live.”</p>
-                    </div>
-                </div>
-            </div>
+        </div>
 
 
     </main>
