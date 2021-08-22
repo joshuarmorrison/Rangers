@@ -63,3 +63,7 @@ header {
 .form-check-label {
     color: white;
 }
+.card-body {
+    font-family: 'IBM Plex Sans Hebrew', sans-serif;
+    color: white;
+}
